@@ -1,0 +1,29 @@
+# Terraform working files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Secrets that must never be committed
+*.pem
+*.key
+.env
+*.auto.tfvars
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Lock files are committed for root stacks only, not reusable modules
+modules/**/.terraform.lock.hcl
